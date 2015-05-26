@@ -2597,13 +2597,13 @@ Top page load animation
   }
 }
 .top-view .main-title {
-  padding-bottom: 70px;
+  padding-bottom: 130px;
 }
 .top-view .main-title::after {
   position: absolute;
   content: '';
   width: 0;
-  height: 5px;
+  height: 3px;
   background-color: #000000;
   left: 50%;
   top: 50%;
@@ -2619,7 +2619,7 @@ Top page load animation
   transition: width 0.5s 0.3s;
 }
 .top-open .top-view .main-title::after {
-  width: 70%;
+  width: 30%;
 }
 .top-view .main-title .top-view-title {
   top: -20px;
@@ -2655,6 +2655,17 @@ Top page load animation
   top: 40px;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .top-view .main-title {
+    padding-bottom: 70px;
+  }
+  .top-view .main-title::after {
+    height: 5px;
+  }
+  .top-open .top-view .main-title::after {
+    width: 70%;
+  }
 }
 .top-view .sub-title {
   bottom: 40px;
