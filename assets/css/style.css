@@ -913,6 +913,7 @@ header section::after {
 }
 
 .chihara-kfd .development .float-block-4,
+.chihara-cd .development .float-block-4,
 .cp .development .float-block-4,
 .dancebattle .development .float-block-4,
 .dancekingdom-2010 .development .float-block-4,
@@ -930,6 +931,7 @@ header section::after {
 }
 @media only screen and (min-width: 768px) {
   .chihara-kfd .development .float-block-4,
+  .chihara-cd .development .float-block-4,
   .cp .development .float-block-4,
   .dancebattle .development .float-block-4,
   .dancekingdom-2010 .development .float-block-4,
