@@ -11,42 +11,12 @@ $(function() {
     var about = $('.about-info');
     var footer = $('.footer');
     var topButton = $('.turn-top');
-    var value = 700;
     var main = $('.portfolio');
     var header = $('header');
     var footer = $('footer');
+    var value = 700;
     var Animation = false;
 
-
-    /*======================================================================
-
-    Page load animation
-
-    ======================================================================*/
-    category.transition({
-      translate: [0, 20],
-      opacity: 1
-    }, 800);
-
-    headerFlex.transition({
-      translate: [0, -40],
-      opacity: 1
-    }, 600);
-
-    info.transition({
-      translate: [0, -60],
-      opacity: 1
-    }, 800);
-
-    designPhoto.transition({
-      translate: [0, -80],
-      opacity: 1
-    }, 1000);
-
-    about.transition({
-      translate: [0, -80],
-      opacity: 1
-    }, 1000);
 
     /*======================================================================
 
@@ -67,8 +37,9 @@ $(function() {
    ======================================================================*/
 
    $(window).load(function() {
-    $(".loader-content").fadeOut('700');
-    $('body').addClass('top-open');
+        $(".loader-content").fadeOut('700');
+        $('body').addClass('top-open');
+        $('.portfolio, .about').addClass('page-open');
    });
 
    /*======================================================================
