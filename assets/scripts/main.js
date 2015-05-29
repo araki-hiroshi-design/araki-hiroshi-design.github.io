@@ -37,7 +37,7 @@ $(function() {
    ======================================================================*/
 
    $(window).load(function() {
-        // $(".loader-content").fadeOut('700');
+        $(".loader-content").fadeOut('700');
         $('body').addClass('top-open');
         $('.portfolio, .about').addClass('page-open');
    });
