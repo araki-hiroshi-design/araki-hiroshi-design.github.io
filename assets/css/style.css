@@ -2086,7 +2086,7 @@ Navigation Contents
     position: absolute;
     top: 60px;
     width: 20%;
-    height: 3px;
+    height: 2px;
     background-color: #999999;
   }
   .main-nav h2 {
@@ -2100,9 +2100,9 @@ Navigation Contents
     margin: 2.5rem 0;
   }
   .main-nav-open .main-nav .main-nav-wrap h2::after {
-    -webkit-transition: -webkit-transform 0.7s 0.7s;
-    -moz-transition: -moz-transform 0.7s 0.7s;
-    transition: transform 0.7s 0.7s;
+    -webkit-transition: -webkit-transform 0.7s;
+    -moz-transition: -moz-transform 0.7s;
+    transition: transform 0.7s;
   }
   .main-nav-open .main-nav .main-nav-wrap .nav-list {
     -webkit-transition: -webkit-transform 0.7s 0.3s;
@@ -2119,7 +2119,6 @@ Footer Contents
 .footer {
   position: relative;
   z-index: 2;
-  -webkit-overflow-scrolling: touch;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -2514,7 +2513,7 @@ Loading animation
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border-width: 0.5rem;
+  border-width: 0.4rem;
   border-style: solid;
   border-color: #2EC4F3 transparent #FFBEEE;
   -webkit-animation: loading2 2s infinite linear;
@@ -2537,7 +2536,7 @@ Loading animation
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border-width: 1rem;
+  border-width: 0.7rem;
   border-color: #2ec4f3 #678eff #b3c6ff #ffbeee;
   border-style: solid;
   -webkit-animation: loading 0.6s infinite linear;
