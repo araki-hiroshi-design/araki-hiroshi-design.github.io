@@ -2284,7 +2284,6 @@ Social-Link
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   z-index: 11;
-  visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: -webkit-transform 0.7s, opacity 0.3s, visibility 1s, width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -2304,7 +2303,6 @@ Social-Link
   border-radius: 50%;
 }
 .social-link-open .social-link-wrap {
-  visibility: visible;
   width: 700px;
   height: 700px;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -2502,6 +2500,27 @@ Loading animation
   min-height: 100%;
   background-color: #fff;
 }
+.loader-content::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: #2EC4F3 transparent #FFBEEE;
+  -webkit-animation: loading2 2s infinite linear;
+  -moz-animation: loading2 2s infinite linear;
+  animation: loading2 2s infinite linear;
+}
 
 .loader {
   position: absolute;
@@ -2513,17 +2532,17 @@ Loading animation
   font-size: 2rem;
   text-indent: -9999rem;
   z-index: 10;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   border-width: 1rem;
-  border-color: #2ec4f3 #678eff rgba(179, 198, 255, 0.5) #ffbeee;
+  border-color: #2ec4f3 #678eff #b3c6ff #ffbeee;
   border-style: solid;
-  -webkit-animation: loading 0.8s infinite linear;
-  -moz-animation: loading 0.8s infinite linear;
-  animation: loading 0.8s infinite linear;
+  -webkit-animation: loading 0.6s infinite linear;
+  -moz-animation: loading 0.6s infinite linear;
+  animation: loading 0.6s infinite linear;
 }
 
 @-webkit-keyframes loading {
@@ -2556,6 +2575,38 @@ Loading animation
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading2 {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes loading2 {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@keyframes loading2 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 /*======================================================================
