@@ -817,11 +817,12 @@ header section::after {
     bottom: -18px;
     color: #B3C6FF;
     text-align: right;
-    font-size: 13rem;
+    font-size: 11rem;
   }
   header .header-flexbox-content .work-category .work-number {
     position: absolute;
     right: 0;
+    font-size: 1.5rem;
   }
   header .header-flexbox-content .work-category .work-number .i {
     margin-left: 10px;
@@ -1277,7 +1278,7 @@ top view
 }
 .thumbnail-wrap .thumbnail .thumbnail-img {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 0;
   min-height: 100%;
   width: 100%;
@@ -1292,7 +1293,7 @@ top view
 }
 .thumbnail-wrap .thumbnail .thumbnail-title {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 0;
   width: 100%;
   padding: 1.8em 0 0 0;
@@ -1300,24 +1301,23 @@ top view
   text-align: center;
   z-index: 1;
   font-family: brandon_bld-webfont;
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-  -moz-transition: -moz-transform 0.4s, opacity 0.4s;
-  transition: transform 0.4s, opacity 0.4s;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s, color 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.4s, color 0.3s;
+  transition: transform 0.4s, opacity 0.4s, color 0.3s;
 }
 .thumbnail-wrap .thumbnail span {
   position: absolute;
-  top: 90px;
+  top: 110px;
   font-size: 1.4rem;
   width: 100%;
   text-align: center;
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.5s, opacity 0.2s;
-  transition: transform 0.5s, opacity 0.2s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.2s, color 0.3s;
+  -moz-transition: -moz-transform 0.5s, opacity 0.2s, color 0.3s;
+  transition: transform 0.5s, opacity 0.2s, color 0.3s;
 }
 .thumbnail-wrap .thumbnail:hover .thumbnail-title {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  color: #ffffff;
   -webkit-transform: translate3d(0, -50px, 0);
   -moz-transform: translate3d(0, -50px, 0);
   -ms-transform: translate3d(0, -50px, 0);
@@ -1325,8 +1325,7 @@ top view
   transform: translate3d(0, -50px, 0);
 }
 .thumbnail-wrap .thumbnail:hover span {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  color: #ffffff;
   -webkit-transform: translate3d(0, -50px, 0);
   -moz-transform: translate3d(0, -50px, 0);
   -ms-transform: translate3d(0, -50px, 0);
@@ -1334,11 +1333,11 @@ top view
   transform: translate3d(0, -50px, 0);
 }
 .thumbnail-wrap .thumbnail:hover .thumbnail-img {
-  -webkit-transform: translate3d(0, -60%, 0);
-  -moz-transform: translate3d(0, -60%, 0);
-  -ms-transform: translate3d(0, -60%, 0);
-  -o-transform: translate3d(0, -60%, 0);
-  transform: translate3d(0, -60%, 0);
+  -webkit-transform: translate3d(0, -65%, 0);
+  -moz-transform: translate3d(0, -65%, 0);
+  -ms-transform: translate3d(0, -65%, 0);
+  -o-transform: translate3d(0, -65%, 0);
+  transform: translate3d(0, -65%, 0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
@@ -1497,13 +1496,21 @@ main img {
 }
 @media only screen and (min-width: 768px) {
   .portfolio main .info {
+    font-size: 1.3rem;
     text-align: left;
+    margin: 0 auto 100px;
   }
   .portfolio main .info .info-wrap {
     padding: 0;
     -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0 0;
     -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0 0;
     box-shadow: rgba(255, 255, 255, 0.5) 0 0 0 0;
+  }
+  .portfolio main .info dt, .portfolio main .info dd {
+    margin-bottom: 15px;
+  }
+  .portfolio main .info span {
+    font-size: 2.3rem;
   }
   .portfolio main .info section > div {
     margin-bottom: 0;
@@ -1519,7 +1526,7 @@ main img {
     bottom: 0;
     right: 60px;
     width: 1px;
-    height: 130px;
+    height: 120px;
     background-color: #d0d0d0;
   }
 }
@@ -1587,11 +1594,11 @@ main img {
   content: "";
   display: table;
 }
-.about main .my-skill-wrap > section:nth-child(1) {
+.about main .my-skill-wrap > section {
   position: relative;
   margin-bottom: 50px;
 }
-.about main .my-skill-wrap > section:nth-child(1)::after {
+.about main .my-skill-wrap > section::after {
   position: absolute;
   content: '';
   width: 70%;
@@ -1609,7 +1616,7 @@ main img {
 }
 .about main .my-skill-wrap > section h3 {
   position: relative;
-  color: #2EC4F3;
+  color: #B3C6FF;
   margin-bottom: 95px;
 }
 .about main .my-skill-wrap > section h3 span {
@@ -1640,6 +1647,12 @@ main img {
   transform: translateX(-50%);
   top: -55px;
 }
+.about main .contact {
+  margin-bottom: 120px;
+}
+.about main .contact .contact-mail {
+  font-size: 2rem;
+}
 @media only screen and (min-width: 1170px) {
   .about main .about-info-wrap > div:nth-child(1) {
     margin-bottom: 150px;
@@ -1651,13 +1664,13 @@ main img {
     top: -17px;
     left: 20px;
   }
-  .about main .my-skill-wrap > section:nth-child(1) {
-    margin-bottom: 170px;
+  .about main .my-skill-wrap > section {
+    margin-bottom: 200px;
   }
-  .about main .my-skill-wrap > section:nth-child(1)::after {
+  .about main .my-skill-wrap > section::after {
     position: absolute;
     content: '';
-    width: 20%;
+    width: 15%;
     height: 1px;
     bottom: -60px;
     display: block;
@@ -1670,9 +1683,6 @@ main img {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .about main .my-skill-wrap > section:nth-child(2) {
-    margin-bottom: 100px;
-  }
   .about main .my-skill-wrap > section li {
     width: 14.28%;
     float: left;
@@ -1681,6 +1691,9 @@ main img {
   .about main .my-skill-wrap > section:nth-child(2) li {
     width: 20%;
     float: left;
+  }
+  .about main .contact .contact-mail {
+    font-size: 2.5rem;
   }
 }
 
@@ -1992,13 +2005,32 @@ Navigation Contents
   margin-bottom: 4rem;
 }
 .main-nav .main-nav-wrap div:nth-of-type(1) a {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .main-nav .main-nav-wrap div:nth-of-type(2) {
   color: #2EC4F3;
 }
 .main-nav .main-nav-wrap div:nth-of-type(3) {
   color: #FFBEEE;
+}
+.main-nav .main-nav-wrap .contact-mail {
+  -webkit-transform: translateX(-20%);
+  -moz-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  -o-transform: translateX(-20%);
+  transform: translateX(-20%);
+  font-size: 1.5rem !important;
+  text-decoration: underline;
+}
+.main-nav-open .main-nav .main-nav-wrap .contact-mail {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
 }
 .main-nav h2 {
   position: relative;
@@ -2484,7 +2516,7 @@ Loading animation
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 12;
+  z-index: 15;
   overflow: hidden;
   width: 100%;
   min-height: 100%;
@@ -2661,9 +2693,9 @@ Top page load animation
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  -webkit-transition: width 0.5s 0.5s;
-  -moz-transition: width 0.5s 0.5s;
-  transition: width 0.5s 0.5s;
+  -webkit-transition: width 0.5s 1s;
+  -moz-transition: width 0.5s 1s;
+  transition: width 0.5s 1s;
 }
 .top-open .top-view .main-title::after {
   width: 40%;
@@ -2716,9 +2748,9 @@ Top page load animation
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: top 0.4s 0.5s, opacity 0.3s 0.5s;
-  -moz-transition: top 0.4s 0.5s, opacity 0.3s 0.5s;
-  transition: top 0.4s 0.5s, opacity 0.3s 0.5s;
+  -webkit-transition: top 0.4s 0.8s, opacity 0.3s 0.8s;
+  -moz-transition: top 0.4s 0.8s, opacity 0.3s 0.8s;
+  transition: top 0.4s 0.8s, opacity 0.3s 0.8s;
 }
 .top-open .top-view .main-title .three-mark {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -2883,4 +2915,17 @@ Page Load animation
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+/*======================================================================
+
+Scroll effect
+
+======================================================================*/
+.block-opacity {
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }

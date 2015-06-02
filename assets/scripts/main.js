@@ -42,6 +42,24 @@ $(function() {
         $('.portfolio, .about').addClass('page-open');
    });
 
+
+   /*======================================================================
+
+   Scroll effect
+
+   ======================================================================*/
+
+   $(window).scroll(function () {
+        var top = $(this).scrollTop();
+        var scroll = 600;
+
+        if (top > scroll) {
+            $('.header-content, .info-wrap').addClass('block-opacity');
+        } else if(top < scroll) {
+            $('.header-content, .info-wrap').removeClass('block-opacity');
+        };
+   })
+
    /*======================================================================
 
    navigation effect
