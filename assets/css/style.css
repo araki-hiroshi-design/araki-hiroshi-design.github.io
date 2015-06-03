@@ -433,48 +433,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "\e64d";
 }
 
-.webicon_skill:before {
+.webicon_skill-01:before {
   content: "\e64e";
 }
 
-.webicon_soba:before {
+.webicon_skill-02:before {
   content: "\e64f";
 }
 
-.webicon_social-link:before {
+.webicon_skill-03:before {
   content: "\e650";
 }
 
-.webicon_starlight:before {
+.webicon_skill-04:before {
   content: "\e651";
 }
 
-.webicon_SublimeT:before {
+.webicon_skill-05:before {
   content: "\e652";
 }
 
-.webicon_tool:before {
+.webicon_skill:before {
   content: "\e653";
 }
 
-.webicon_triangle:before {
+.webicon_soba:before {
   content: "\e654";
 }
 
-.webicon_twitter:before {
+.webicon_social-link:before {
   content: "\e655";
 }
 
-.webicon_uparrow-min:before {
+.webicon_starlight:before {
   content: "\e656";
 }
 
-.webicon_uparrow:before {
+.webicon_SublimeT:before {
   content: "\e657";
 }
 
-.webicon_view:before {
+.webicon_tool:before {
   content: "\e658";
+}
+
+.webicon_triangle:before {
+  content: "\e659";
+}
+
+.webicon_twitter:before {
+  content: "\e65a";
+}
+
+.webicon_uparrow-min:before {
+  content: "\e65b";
+}
+
+.webicon_uparrow:before {
+  content: "\e65c";
+}
+
+.webicon_view:before {
+  content: "\e65d";
 }
 
 /*======================================================================
@@ -1668,6 +1688,10 @@ main img {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   top: -55px;
+}
+.about main .my-skill-wrap .skill-icon span {
+  top: -75px;
+  font-size: 7rem;
 }
 .about main .contact {
   position: relative;
