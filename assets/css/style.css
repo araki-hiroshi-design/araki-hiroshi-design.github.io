@@ -906,7 +906,7 @@ header section::after {
     content: '';
     position: absolute;
     top: 80%;
-    left: -9%;
+    left: -11%;
     width: 10px;
     height: 10px;
     background-color: #2EC4F3;
