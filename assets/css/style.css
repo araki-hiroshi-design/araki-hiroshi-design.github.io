@@ -2181,13 +2181,15 @@ Navigation Contents
   width: 0;
   height: 2px;
   top: 25px;
-  left: 0;
+  left: -30px;
   background-color: #2EC4F3;
   font-size: 1.8rem;
   color: #999999;
-  -webkit-transition: width 0.3s, opacity 0.3s;
-  -moz-transition: width 0.3s, opacity 0.3s;
-  transition: width 0.3s, opacity 0.3s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: width 0.2s, left 0.3s, opacity 0.3s;
+  -moz-transition: width 0.2s, left 0.3s, opacity 0.3s;
+  transition: width 0.2s, left 0.3s, opacity 0.3s;
 }
 .main-nav .nav-list li:hover::before {
   left: -20px;
@@ -2195,7 +2197,8 @@ Navigation Contents
   opacity: 1;
 }
 .main-nav .nav-list li:hover::after {
-  width: 90%;
+  width: 10%;
+  left: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
