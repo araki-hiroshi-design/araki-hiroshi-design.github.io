@@ -2964,9 +2964,9 @@ Top page load animation
   bottom: 100px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: bottom 0.7s 0.6s, opacity 0.7s 0.7s;
-  -moz-transition: bottom 0.7s 0.6s, opacity 0.7s 0.7s;
-  transition: bottom 0.7s 0.6s, opacity 0.7s 0.7s;
+  -webkit-transition: -webkit-transform 0.7s, bottom 0.7s 0.6s, opacity 0.7s 0.7s;
+  -moz-transition: -moz-transform 0.7s, bottom 0.7s 0.6s, opacity 0.7s 0.7s;
+  transition: transform 0.7s, bottom 0.7s 0.6s, opacity 0.7s 0.7s;
 }
 .top-view .sub-title span {
   position: absolute;
@@ -2981,9 +2981,9 @@ Top page load animation
   transform: translateX(-50%);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: bottom 0.7s 0.7s, opacity 0.7s 0.7s;
-  -moz-transition: bottom 0.7s 0.7s, opacity 0.7s 0.7s;
-  transition: bottom 0.7s 0.7s, opacity 0.7s 0.7s;
+  -webkit-transition: -webkit-transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.7s;
+  -moz-transition: -moz-transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.7s;
+  transition: transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.7s;
 }
 .top-open .top-view .sub-title {
   bottom: 120px;
