@@ -457,44 +457,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "\e653";
 }
 
-.webicon_soba:before {
+.webicon_smile:before {
   content: "\e654";
 }
 
-.webicon_social-link:before {
+.webicon_soba:before {
   content: "\e655";
 }
 
-.webicon_starlight:before {
+.webicon_social-link:before {
   content: "\e656";
 }
 
-.webicon_SublimeT:before {
+.webicon_starlight:before {
   content: "\e657";
 }
 
-.webicon_tool:before {
+.webicon_SublimeT:before {
   content: "\e658";
 }
 
-.webicon_triangle:before {
+.webicon_tool:before {
   content: "\e659";
 }
 
-.webicon_twitter:before {
+.webicon_triangle:before {
   content: "\e65a";
 }
 
-.webicon_uparrow-min:before {
+.webicon_twitter:before {
   content: "\e65b";
 }
 
-.webicon_uparrow:before {
+.webicon_uparrow-min:before {
   content: "\e65c";
 }
 
-.webicon_view:before {
+.webicon_uparrow:before {
   content: "\e65d";
+}
+
+.webicon_view:before {
+  content: "\e65e";
 }
 
 /*======================================================================
@@ -934,6 +938,11 @@ header section::after {
 .about header .header-title span {
   font-size: 2rem;
   letter-spacing: 2px;
+}
+.about header .header-title::before {
+  content: '\e654';
+  top: 1px;
+  font-size: 2.5rem;
 }
 @media only screen and (min-width: 1170px) {
   .about header {
@@ -2369,7 +2378,10 @@ Footer Contents
   color: #2EC4F3;
 }
 .footer .footer-wrap .footer-contents .social-link:hover .social-link-title::before {
-  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  left: 0;
+  width: 50px;
 }
 .footer .footer-wrap .footer-contents .social-link .social-link-title {
   position: relative;
@@ -2453,13 +2465,16 @@ Footer Contents
   .footer .footer-wrap .footer-contents .social-link .social-link-title::before {
     content: '';
     position: absolute;
-    bottom: -2px;
+    left: -20px;
+    bottom: -4px;
     width: 0;
     height: 2px;
     background-color: #2EC4F3;
-    -webkit-transition: width 0.3s;
-    -moz-transition: width 0.3s;
-    transition: width 0.3s;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: width 0.3s, left 0.3s, opacity 0.3s;
+    -moz-transition: width 0.3s, left 0.3s, opacity 0.3s;
+    transition: width 0.3s, left 0.3s, opacity 0.3s;
   }
   .footer .float-block-2::after {
     clear: both;
