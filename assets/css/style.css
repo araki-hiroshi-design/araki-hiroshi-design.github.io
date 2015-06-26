@@ -108,6 +108,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   src: url("../font/NotoSans-M.eot?#iefix") format("embedded-opentype"), url("../font/NotoSans-M.woff") format("woff"), url("../font/NotoSans-M.ttf") format("truetype"), url("../font/NotoSans-M.svg#NotoSans-M") format("svg");
 }
+@font-face {
+  font-family: "cleanvertising_light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/cleanvel-webfont.eot?#iefix") format("embedded-opentype"), url("../font/cleanvel-webfont.woff2") format("woff2"), url("../font/cleanvel-webfont.woff") format("woff"), url("../font/cleanvel-webfont.ttf") format("truetype"), url("../font/cleanvel-webfont.svg#cleanvertising_light") format("svg");
+}
 .i {
   font-family: 'webicon';
   speak: none;
@@ -1097,9 +1103,11 @@ top view
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   top: -55px;
+  font-family: "cleanvertising_light";
 }
 .top-view .main-title .top-view-title span {
   font-size: 2rem;
+  font-family: "cleanvertising_light";
 }
 .top-view .main-title .sub-title2 {
   position: absolute;
@@ -1931,8 +1939,8 @@ nav-trigger
   top: 20px;
   height: 55px;
   width: 55px;
-  border-width: 4px;
-  border-color: #2ec4f3 #678eff rgba(103, 142, 255, 0.5) #ffbeee;
+  border-width: 3px;
+  border-color: #4C4F69;
   border-style: solid;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1987,18 +1995,18 @@ nav-trigger
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  height: 2px;
+  height: 3px;
   width: 25px;
-  background-color: #678EFF;
+  background-color: #4C4F69;
   -webkit-transition: background-color 1s;
   -moz-transition: background-color 1s;
   transition: background-color 1s;
 }
 .main-nav-trigger .main-nav-icon::before {
-  background-color: #9ab4ff;
+  background-color: #4C4F69;
 }
 .main-nav-trigger .main-nav-icon::after {
-  background-color: #2EC4F3;
+  background-color: #4C4F69;
 }
 .main-nav-trigger .main-nav-icon::before, .main-nav-trigger .main-nav-icon::after {
   content: '';
@@ -2433,17 +2441,17 @@ Footer Contents
     margin-bottom: 0;
   }
   .footer .footer-wrap .footer-contents p {
-    margin-top: 13px;
+    margin-top: 17px;
   }
   .footer .footer-wrap .footer-contents span {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .footer .footer-wrap .footer-contents .social {
     max-width: 320px;
     width: 50%;
     float: right;
     text-align: right;
-    margin-top: 7px;
+    margin-top: 13px;
   }
   .footer .footer-wrap .footer-contents .social span {
     font-size: 2.5rem;
@@ -2889,7 +2897,7 @@ Top page load animation
   transition: width 0.5s 0.3s;
 }
 .top-open .top-view .main-title::after {
-  width: 40%;
+  width: 10%;
 }
 .top-view .main-title .top-view-title {
   top: -20px;
@@ -2948,15 +2956,47 @@ Top page load animation
   opacity: 1;
   top: -250px;
 }
+.top-view .main-title .ah-mark {
+  position: absolute;
+  top: -260px;
+  width: 300px;
+  height: 150px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: top 0.7s, opacity 0.3s;
+  -moz-transition: top 0.7s, opacity 0.3s;
+  transition: top 0.7s, opacity 0.3s;
+}
+.top-open .top-view .main-title .ah-mark {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  top: -240px;
+}
 @media only screen and (min-width: 768px) {
   .top-view .main-title {
     padding-bottom: 70px;
   }
   .top-view .main-title::after {
-    height: 5px;
+    height: 4px;
   }
   .top-open .top-view .main-title::after {
-    width: 50%;
+    width: 10%;
+  }
+  .top-view .main-title .ah-mark {
+    top: -330px;
+    height: 200px;
+  }
+  .top-open .top-view .main-title .ah-mark {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    top: -300px;
   }
 }
 .top-view .sub-title {
