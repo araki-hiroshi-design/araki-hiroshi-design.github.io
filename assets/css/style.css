@@ -1306,8 +1306,8 @@ top view
 .thumbnail-wrap .thumbnail:hover .target-icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  width: 120px;
-  height: 120px;
+  width: 350px;
+  height: 350px;
 }
 .thumbnail-wrap .thumbnail .target-icon {
   position: absolute;
@@ -1322,8 +1322,8 @@ top view
   transform: translateX(-50%) translateY(-50%);
   fill: #ffffff;
   stroke: #ffffff;
-  width: 250px;
-  height: 250px;
+  width: 800px;
+  height: 800px;
   z-index: 2;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
