@@ -758,6 +758,9 @@ header section::after {
     margin: 0 auto;
     padding: 5px 0;
   }
+  header .category .webicon_araki-symbol {
+    right: 0;
+  }
   header .header-home {
     top: 15px;
     right: 8%;
@@ -881,29 +884,6 @@ header section::after {
     left: 0;
     text-align: left;
     font-size: 5.5rem;
-  }
-  header .header-home {
-    top: 20px;
-    right: -4%;
-  }
-  header .header-home::before {
-    content: '';
-    position: absolute;
-    left: -11px;
-    bottom: 0;
-    width: 20px;
-    height: 2px;
-    background-color: #2EC4F3;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition: bottom 0.3s, opacity 0.3s;
-    -moz-transition: bottom 0.3s, opacity 0.3s;
-    transition: bottom 0.3s, opacity 0.3s;
-  }
-  header .header-home:hover::before {
-    bottom: 15px;
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
   }
 }
 .main-nav-open .about header, .main-nav-open .a-star header, .main-nav-open .dancekingdom-2010 header, .main-nav-open .dancekingdom-2011 header, .main-nav-open .dancekingdom-2014 header, .main-nav-open .chihara-kfd header, .main-nav-open .chihara-cd header, .main-nav-open .cp header, .main-nav-open .cbc header, .main-nav-open .dancebattle header, .main-nav-open .dancenation-2010 header, .main-nav-open .dancenation-2011 header, .main-nav-open .dancenation-2012 header, .main-nav-open .dancenation-2015 header, .main-nav-open .jsda header, .main-nav-open .love-1 header, .main-nav-open .love-2 header, .main-nav-open .love-3 header, .main-nav-open .live-dance-fes header, .main-nav-open .mid header, .main-nav-open .soba header, .main-nav-open .mumu header, .main-nav-open .schan header, .main-nav-open .star header {
