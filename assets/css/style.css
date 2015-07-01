@@ -655,7 +655,7 @@ header .category {
 header .category::after {
   position: absolute;
   content: '';
-  width: 200px;
+  width: 150px;
   height: 1px;
   bottom: -30px;
   display: block;
@@ -669,34 +669,17 @@ header .category::after {
   transform: translateX(-50%);
 }
 header .category .category-title {
-  padding: 12px 0 12px 80px;
+  padding: 12px 0 12px 0;
   font-size: 2rem;
 }
 header .category span {
   position: absolute;
-  left: 100px;
   font-size: 4rem;
 }
-header .header-home {
-  position: absolute;
-  z-index: 1;
+header .category .webicon_araki-symbol {
   top: -10px;
   right: 2%;
-  width: 55px;
-  height: 55px;
-  font-size: 4rem;
-}
-header .header-home span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  font-size: 5.5rem;
 }
 header .header-flexbox-content .work-category {
   display: none;
@@ -774,13 +757,6 @@ header section::after {
     max-width: 300px;
     margin: 0 auto;
     padding: 5px 0;
-  }
-  header .category span {
-    top: -5px;
-    left: 100px;
-  }
-  header .category .home {
-    right: -86%;
   }
   header .header-home {
     top: 15px;
@@ -900,9 +876,11 @@ header section::after {
   header .category .category-title {
     padding: 12px 0;
   }
-  header .category span {
-    top: 0;
+  header .category .webicon_araki-symbol {
+    top: -8px;
     left: 0;
+    text-align: left;
+    font-size: 5.5rem;
   }
   header .header-home {
     top: 20px;
