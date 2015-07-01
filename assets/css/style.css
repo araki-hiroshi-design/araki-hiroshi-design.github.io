@@ -655,7 +655,7 @@ header .category {
 header .category::after {
   position: absolute;
   content: '';
-  width: 150px;
+  width: 100px;
   height: 1px;
   bottom: -30px;
   display: block;
@@ -879,10 +879,20 @@ header section::after {
   header .category .category-title {
     padding: 12px 0;
   }
+  header .category .logo-mark {
+    position: absolute;
+    top: -6px;
+    width: 120px;
+    height: 55px;
+    border-width: 0 0 0 1px;
+    border-right-color: #999999;
+    border-left-color: #999999;
+    border-style: solid;
+  }
   header .category .webicon_araki-symbol {
-    top: -8px;
-    left: 0;
-    text-align: left;
+    top: -2px;
+    left: 4px;
+    text-align: center;
     font-size: 5.5rem;
   }
 }

@@ -167,7 +167,7 @@ header {
 
     .category {
         position: relative;
-        @include border(150px, 1px, -30px);
+        @include border(100px, 1px, -30px);
         margin: 10px 0 80px;
         text-align: center;
         letter-spacing: 2px;
@@ -333,10 +333,20 @@ header {
                 padding: 12px 0;
             }
 
+            .logo-mark {
+                position: absolute;
+                top: -6px;
+                width: 120px;
+                height: 55px;
+                @include border-width(0 0 0 1px);
+                @include border-color(null $base-color null $base-color);
+                @include border-style(solid);
+            }
+
             .webicon_araki-symbol {
-                top: -8px;
-                left: 0;
-                text-align: left;
+                top: -2px;
+                left: 4px;
+                text-align: center;
                 font-size: 5.5rem;
             }
         }
