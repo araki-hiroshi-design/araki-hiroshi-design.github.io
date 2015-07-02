@@ -535,7 +535,7 @@ top view
         width: 90%;
         text-align: center;
         letter-spacing: 2px;
-        @include transition(transform $animation-duration, opacity .4s, color .3s, bottom .3s);
+        @include transition(transform $animation-duration, opacity .1s, color .3s, bottom .3s);
 
         h2 {
             margin-bottom: 1.2rem;
@@ -1307,32 +1307,14 @@ nav-trigger
     height: 55px;
     width: 55px;
     @include border-width(3px);
-    // @include border-color(rgba($color-main, 1) rgba($color-sub, 1) rgba($color-sub, .5) rgba($color-pink, 1));
-    @include border-color(#4C4F69);
+    @include border-color(rgba($color-main, 1) rgba($color-sub, 1) rgba($color-sub, .5) rgba($color-pink, 1));
+    // @include border-color(#4C4F69);
     @include border-style(solid);
     @include border-radius(50%);
     @include transition(transform $animation-duration - .3s, border-color $animation-duration - .2s);
 
-    &::before {
-        content: '';
-        position: absolute;
-        @include center(x);
-        left: 0;
-        bottom: -20px;
-        width: 20px;
-        height: 2px;
-        background-color: $color-main;
-        @include opacity(0);
-        @include transition(left .3s, opacity .3s);
-    }
-
     &:hover {
         border-color: $color-main;
-
-        &::before {
-            @include center(x);
-            @include opacity(1);
-        }
     }
 
     .main-nav-icon {
@@ -1373,12 +1355,6 @@ nav-trigger
             @include transform(translateY(-7px));
             @include transition(transform $animation-duration, width $animation-duration, background-color $animation-duration + .2s);
         }
-    }
-
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 
     .main-nav-open & {
@@ -2014,7 +1990,6 @@ Top page load animation
         position: absolute;
         bottom: 0;
         min-width: 100%;
-        height: auto;
         @include center;
         @include transition(transform $animation-duration, opacity .4s .3s);
         @include opacity(0);
@@ -2032,6 +2007,11 @@ Top page load animation
     .main-title {
         top: 55%;
         padding-bottom: 50px;
+        @include transition(opacity .3s);
+
+        .container-open & {
+            @include opacity(0);
+        }
 
         &::after {
             position: absolute;
@@ -2090,15 +2070,15 @@ Top page load animation
         .ah-mark {
             position: absolute;
             top: -260px;
-            width: 300px;
-            height: 150px;
+            width: 200px;
+            height: 120px;
             @include center(x);
             @include opacity(0);
             @include transition(top $animation-duration, opacity .3s);
 
             .top-open & {
                 @include opacity(1);
-                top: -240px;
+                top: -210px;
             }
         }
 
@@ -2139,7 +2119,7 @@ Top page load animation
             bottom: 30px;
             @include center(x);
             @include opacity(0);
-            @include transition(transform $animation-duration, bottom $animation-duration .7s, opacity .7s .7s);
+            @include transition(transform $animation-duration, bottom $animation-duration .7s, opacity .7s .2s);
         }
 
         .top-open & {
@@ -2158,8 +2138,8 @@ Top page load animation
         }
 
         .main-nav-open & {
-            @include transition(transform $animation-duration, opacity .3s 0s);
-            @include transform(translateX(20%) translate3d(0, 40px, 0));
+            @include transition(transform $animation-duration - .3s, opacity .3s 0s);
+            @include transform(translateX(50%) translate3d(0, 40px, 0));
             @include opacity(0);
         }
     }

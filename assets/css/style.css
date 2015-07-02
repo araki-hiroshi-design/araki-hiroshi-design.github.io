@@ -79,18 +79,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../font/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../font/brandon_bld-webfont.woff2") format("woff2"), url("../font/brandon_bld-webfont.woff") format("woff"), url("../font/brandon_bld-webfont.ttf") format("truetype"), url("../font/brandon_bld-webfont.svg#brandon_bld-webfont") format("svg");
 }
 @font-face {
-  font-family: "zonapro-bold-webfont";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../font/zonapro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/zonapro-bold-webfont.woff2") format("woff2"), url("../font/zonapro-bold-webfont.woff") format("woff"), url("../font/zonapro-bold-webfont.ttf") format("truetype"), url("../font/zonapro-bold-webfont.svg#zonapro-bold-webfont") format("svg");
-}
-@font-face {
-  font-family: "zonapro-thin-webfont";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../font/zonapro-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../font/zonapro-thin-webfont.woff2") format("woff2"), url("../font/zonapro-thin-webfont.woff") format("woff"), url("../font/zonapro-thin-webfont.ttf") format("truetype"), url("../font/zonapro-thin-webfont.svg#zonapro-thin-webfont") format("svg");
-}
-@font-face {
   font-family: "webicon";
   font-style: normal;
   font-weight: normal;
@@ -1098,9 +1086,9 @@ top view
   width: 90%;
   text-align: center;
   letter-spacing: 2px;
-  -webkit-transition: -webkit-transform 0.7s, opacity 0.4s, color 0.3s, bottom 0.3s;
-  -moz-transition: -moz-transform 0.7s, opacity 0.4s, color 0.3s, bottom 0.3s;
-  transition: transform 0.7s, opacity 0.4s, color 0.3s, bottom 0.3s;
+  -webkit-transition: -webkit-transform 0.7s, opacity 0.1s, color 0.3s, bottom 0.3s;
+  -moz-transition: -moz-transform 0.7s, opacity 0.1s, color 0.3s, bottom 0.3s;
+  transition: transform 0.7s, opacity 0.1s, color 0.3s, bottom 0.3s;
 }
 .top-view .sub-title h2 {
   margin-bottom: 1.2rem;
@@ -1908,7 +1896,7 @@ nav-trigger
   height: 55px;
   width: 55px;
   border-width: 3px;
-  border-color: #4C4F69;
+  border-color: #2ec4f3 #678eff rgba(103, 142, 255, 0.5) #ffbeee;
   border-style: solid;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1917,40 +1905,8 @@ nav-trigger
   -moz-transition: -moz-transform 0.4s, border-color 0.5s;
   transition: transform 0.4s, border-color 0.5s;
 }
-.main-nav-trigger::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 0;
-  bottom: -20px;
-  width: 20px;
-  height: 2px;
-  background-color: #2EC4F3;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: left 0.3s, opacity 0.3s;
-  -moz-transition: left 0.3s, opacity 0.3s;
-  transition: left 0.3s, opacity 0.3s;
-}
 .main-nav-trigger:hover {
   border-color: #2EC4F3;
-}
-.main-nav-trigger:hover::before {
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
 }
 .main-nav-trigger .main-nav-icon {
   position: absolute;
@@ -2018,11 +1974,6 @@ nav-trigger
   -webkit-transition: -webkit-transform 0.7s, width 0.7s, background-color 0.9s;
   -moz-transition: -moz-transform 0.7s, width 0.7s, background-color 0.9s;
   transition: transform 0.7s, width 0.7s, background-color 0.9s;
-}
-.main-nav-trigger svg {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .main-nav-open .main-nav-trigger {
   -webkit-transform: rotate(180deg);
@@ -2812,7 +2763,6 @@ Top page load animation
   position: absolute;
   bottom: 0;
   min-width: 100%;
-  height: auto;
   left: 50%;
   top: 50%;
   bottom: auto;
@@ -2844,6 +2794,13 @@ Top page load animation
 .top-view .main-title {
   top: 55%;
   padding-bottom: 50px;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.container-open .top-view .main-title {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
 .top-view .main-title::after {
   position: absolute;
@@ -2927,8 +2884,8 @@ Top page load animation
 .top-view .main-title .ah-mark {
   position: absolute;
   top: -260px;
-  width: 300px;
-  height: 150px;
+  width: 200px;
+  height: 120px;
   left: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
@@ -2945,7 +2902,7 @@ Top page load animation
 .top-open .top-view .main-title .ah-mark {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  top: -240px;
+  top: -210px;
 }
 @media only screen and (min-width: 768px) {
   .top-view .main-title {
@@ -2989,9 +2946,9 @@ Top page load animation
   transform: translateX(-50%);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: -webkit-transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.7s;
-  -moz-transition: -moz-transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.7s;
-  transition: transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.7s;
+  -webkit-transition: -webkit-transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.2s;
+  -moz-transition: -moz-transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.2s;
+  transition: transform 0.7s, bottom 0.7s 0.7s, opacity 0.7s 0.2s;
 }
 .top-open .top-view .sub-title {
   bottom: 120px;
@@ -3012,14 +2969,14 @@ Top page load animation
   color: #999999;
 }
 .main-nav-open .top-view .sub-title {
-  -webkit-transition: -webkit-transform 0.7s, opacity 0.3s 0s;
-  -moz-transition: -moz-transform 0.7s, opacity 0.3s 0s;
-  transition: transform 0.7s, opacity 0.3s 0s;
-  -webkit-transform: translateX(20%) translate3d(0, 40px, 0);
-  -moz-transform: translateX(20%) translate3d(0, 40px, 0);
-  -ms-transform: translateX(20%) translate3d(0, 40px, 0);
-  -o-transform: translateX(20%) translate3d(0, 40px, 0);
-  transform: translateX(20%) translate3d(0, 40px, 0);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.3s 0s;
+  transition: transform 0.4s, opacity 0.3s 0s;
+  -webkit-transform: translateX(50%) translate3d(0, 40px, 0);
+  -moz-transform: translateX(50%) translate3d(0, 40px, 0);
+  -ms-transform: translateX(50%) translate3d(0, 40px, 0);
+  -o-transform: translateX(50%) translate3d(0, 40px, 0);
+  transform: translateX(50%) translate3d(0, 40px, 0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
