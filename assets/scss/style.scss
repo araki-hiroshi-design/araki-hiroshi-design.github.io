@@ -1320,7 +1320,7 @@ nav-trigger
     .main-nav-icon {
         position: absolute;
         @include center;
-        height: 3px;
+        height: 2px;
         width: 25px;
         background-color: #4C4F69;
         @include transition(background-color $animation-duration + .3s);

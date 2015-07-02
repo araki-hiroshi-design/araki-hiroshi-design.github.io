@@ -1919,7 +1919,7 @@ nav-trigger
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  height: 3px;
+  height: 2px;
   width: 25px;
   background-color: #4C4F69;
   -webkit-transition: background-color 1s;
