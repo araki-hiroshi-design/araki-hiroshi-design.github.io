@@ -1226,6 +1226,34 @@ top view
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
+.thumbnail-wrap .target-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  fill: #ffffff;
+  stroke: #ffffff;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.7s, opacity 0.3s, width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: -moz-transform 0.7s, opacity 0.3s, width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.7s, opacity 0.3s, width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.thumbnail-wrap:hover .target-icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  width: 200px;
+  height: 200px;
+}
 .thumbnail-wrap .thumbnail {
   position: relative;
   -webkit-box-flex: 1;
