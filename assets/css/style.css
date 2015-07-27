@@ -615,6 +615,10 @@ header p {
   line-height: 2;
   word-wrap: break-word;
 }
+header img {
+  max-width: 100%;
+  height: auto;
+}
 .main-nav-open header {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -668,6 +672,9 @@ header .category .webicon_araki-symbol {
   top: -10px;
   right: 2%;
   font-size: 5.5rem;
+}
+header .header-topimage {
+  margin-bottom: 50px;
 }
 header .header-flexbox-content .work-category {
   display: none;
@@ -739,7 +746,7 @@ header section::after {
     text-align: left;
   }
   header .category {
-    margin: 0 0 180px;
+    margin: 0 0 100px;
   }
   header .category .category-title {
     max-width: 300px;
@@ -752,6 +759,9 @@ header section::after {
   header .header-home {
     top: 15px;
     right: 8%;
+  }
+  header .header-topimage {
+    margin-bottom: 100px;
   }
   header .header-flexbox-content {
     display: -webkit-box;
@@ -3034,6 +3044,18 @@ Page Load animation
   opacity: 1;
 }
 
+.header-topimage {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.7s 0.4s, opacity 0.6s 0.6s;
+  -moz-transition: -moz-transform 0.7s 0.4s, opacity 0.6s 0.6s;
+  transition: transform 0.7s 0.4s, opacity 0.6s 0.6s;
+}
+.page-open .header-topimage {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
 .work-icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -3052,6 +3074,18 @@ Page Load animation
   -ms-transform: translateY(20px);
   -o-transform: translateY(20px);
   transform: translateY(20px);
+}
+
+.header-topimage {
+  position: relative;
+  top: 60px;
+}
+.page-open .header-topimage {
+  -webkit-transform: translateY(-60px);
+  -moz-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -o-transform: translateY(-60px);
+  transform: translateY(-60px);
 }
 
 .header-flexbox-content {
